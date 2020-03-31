@@ -13,6 +13,11 @@ class ObjNavegacio {
         if (posCoixinet !== -1) {
             this.canviaSeccio(document.URL.substring(posCoixinet + 1))
         }
+
+        // Inicia el menu movil sense mostrar
+
+        let menu = document.getElementById('botones'); 
+        menu.style.display = "none";
     }
 
     // Canvia a una nova secció informant del canvi al navegador
@@ -23,6 +28,7 @@ class ObjNavegacio {
 
         // Mostrem el canvi de seccio
         this.mostraSeccio(seccioNova)
+        this.hiddenmenu()
     }
 
     // Amaga la secció anterior i mostra la nova
@@ -46,6 +52,24 @@ class ObjNavegacio {
         // Executa la funció de càrrega d'aquesta secció si és necessari
         iniciaSeccio(seccioNova)
     }
+    /* MENU MOVIL */
+
+    hiddenmenu() {
+
+        let menu = document.getElementById('botones');   
+        
+        if (menu.style.display == "block"){
+        
+        
+        menu.style.display = "none";
+        
+        }else{
+        
+        menu.style.display = "block";
+        }
+    }
+
+
 }
 
-
+    
