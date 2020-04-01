@@ -29,19 +29,18 @@
                 <div class="menumobile">LA MEJOR WEB DE VIAJES CALIDAD-PRECIO</div>
             </div>
         </div>
-
-        <div class="menumar desktop">
-            <div id='frontendMenuWeb' class='flexRow'>
-                <div class='botoMenu' onclick='navegacio.canviaSeccio("frontendHome")'>INICI</div>
-                <div class='botoMenu' onclick='navegacio.canviaSeccio("frontendPresentacio")'>PRESENTACIÓ</div>
-                <div class='botoMenu' onclick='navegacio.canviaSeccio("frontendProductes")'>PRODUCTES</div>
-                <div class='botoMenu' onclick='navegacio.canviaSeccio("frontendContacte")'>CONTACTE</div>
-                <div id='botoLoginWeb' class='botoMenu' onclick='popups.mostraPopup("popupLogin")'>LOGIN BACKOFFICE</div>
-                <div id='botoGestioUsuarisWeb' class='botoMenu none' onclick='navegacio.canviaSeccio("backofficeUsuaris")'>GESTIÓ USUARIS</div>
-                <div id='botoGestioProductesWeb' class='botoMenu none' onclick='navegacio.canviaSeccio("backofficeProductes")'>GESTIÓ PRODUCTES</div>
-                <div id='botoLogoutWeb' class='botoMenu none' onclick='login.tancaLaSessio()'>SORTIR</div>
-            </div>
+        <div id='frontendMenuWeb' class='flexRow desktop'>
+            <div class='botoMenu' onclick='navegacio.canviaSeccio("frontendHome")'>INICI</div>
+            <div class='botoMenu' onclick='navegacio.canviaSeccio("frontendPresentacio")'>PRESENTACIÓ</div>
+            <div class='botoMenu' onclick='navegacio.canviaSeccio("frontendProductes")'>PRODUCTES</div>
+            <div class='botoMenu' onclick='navegacio.canviaSeccio("frontendContacte")'>CONTACTE</div>
+            <div id='botoLoginWeb' class='botoMenu' onclick='popups.mostraPopup("popupLogin")'>LOGIN BACKOFFICE</div>
+            <div id='botoGestioUsuarisWeb' class='botoMenu none' onclick='navegacio.canviaSeccio("backofficeUsuaris")'>GESTIÓ USUARIS</div>
+            <div id='botoGestioProductesWeb' class='botoMenu none' onclick='navegacio.canviaSeccio("backofficeProductes")'>GESTIÓ PRODUCTES</div>
+            <div id='botoLogoutWeb' class='botoMenu none' onclick='login.tancaLaSessio()'>SORTIR</div>
         </div>
+        <div class="menumar desktop"></div>
+
         <div id='frontendMenuMobil' class='flexColumn mobile'>
             
             <div id="botones">
@@ -62,76 +61,73 @@
         </div>
 
         <div id='frontendPresentacio'>
-                <div class="titulopre">
-                    <div class="texttar">
-                        <H4 class="difellocs">BENVINGUTS A LA MILLOR WEB DE AGENCIES DE VIATGES</H4>
-                        <H4 class="difellocs">AQUI POTS VEURE DIFERENTS LLOCS POSIBLES PER VIATJAR</H4>
-                        <img src="/web/imatges/maleta.gif">
-                    </div>
-                    <div class="targetes">
-                        
-                        <div class="demo-card-square mdl-card mdl-shadow--2dp">
-                            <div class="mdl-card__title mdl-card__titleA mdl-card--expand">
-                                <div class="colortitle">
-                                    <h2 class="mdl-card__title-text">Japon</h2>
-                                </div>
-                            </div>
-                            <div class="mdl-card__supporting-text">
-                                Creativitat, Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </div>
-                            <div class="mdl-card__actions mdl-card--border">
-                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                                Informa't
-                                </a>
-                            </div>
-                        </div>
-                        <div class="demo-card-square mdl-card mdl-shadow--2dp">
-                            <div class="mdl-card__title mdl-card__titleB mdl-card--expand">
-                                <div class="colortitle">
-                                    <h2 class="mdl-card__title-text">Barcelona</h2>
-                                </div>  
-                            </div>
-                            <div class="mdl-card__supporting-text">
-                                Experiències, Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </div>
-                            <div class="mdl-card__actions mdl-card--border">
-                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                                Informa't
-                                </a>
-                            </div>
-                        </div>
-                        <div class="demo-card-square mdl-card mdl-shadow--2dp">
-                            <div class="mdl-card__title mdl-card__titleC mdl-card--expand">
-                                <div class="colortitle">
-                                    <h2 class="mdl-card__title-text">Londres</h2>
-                                </div>
-                            </div>
-                            <div class="mdl-card__supporting-text">
-                                Aventura, Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </div>
-                            <div class="mdl-card__actions mdl-card--border">
-                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                                Informa't
-                                </a>
-                            </div>
+            <H4>BENVINGUTS A LA MILLOR WEB DE AGENCIES DE VIATGES</H4>
+            <div class="margin fuentepre">
+                Hola, som una empresa de viatges de on volem que busquis el millor lloc possible per a tu i per a nosaltres amb una qualitat i preu molt bo. Si explores atentament aquesta pagina pots veure llocs rurals o diferents alternatives per els teus gustos. Apunta't ara i serem feliços tu i nosaltres.
+            </div>
+            <H4>AQUI POTS VEURE DIFERENTS LLOCS POSIBLES PER VIATJAR</H4>
+            <img src="/web/imatges/maleta.gif" width="300">
+            <H4>AQUI TENS ALGUNS VIATJES INTERESSANTS PER ANAR AMB FAMILIA</H4>
+            <div class="targetes">
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title mdl-card__titleA mdl-card--expand">
+                        <div class="colortitle">
+                            <h2 class="mdl-card__title-text">Japon</h2>
                         </div>
                     </div>
-                    <div class="difellocs">
-                        <div>DIFERENTS LLOCS ON POTS ANAR</div> 
+                    <div class="mdl-card__supporting-text">
+                        Viaje a Japon, un lugar muy turistico y amigable.
                     </div>
-                    <div class="margin">
-                        Descubre las mejores experiencias en hoteles en los más de 1000 artículos de trivago Magazine, desde hoteles boutique en Barcelona hasta casas rurales con encanto en Andalucía.
-                        En el buscador de hoteles de trivago es facilísimo comparar los precios de más de 1,8 millones de hoteles de más de 190 países en más de 400 webs de reserva. Cada año recibimos 1 400 millones de visitas de viajeros que usan este buscador de hoteles para comparar distintas ofertas en el mismo destino. Además, te aportamos información útil para viajar a ciudades como Madrid o Granada. Encontrar tu hotel ideal en trivago es pan comido. Si buscas ideas para tu próxima aventura, recuerda que Barcelona y sus alrededores son una excelente opción para viajes de una semana o más, y en nuestro buscador encontrarás una gran cantidad de hoteles disponibles.
-                    </div>
-                    <div class="slider">
-                        <ul>
-                            <li><img src="/web/imatges/fondomenu2.jpg"></li>
-                            <li><img src="/web/imatges/fondomenu2.jpg"></li>
-                            <li><img src="/web/imatges/fondomenu2.jpg"></li>
-                            <li><img src="/web/imatges/fondomenu2.jpg"></li>
-                        </ul>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                        Informa't
+                        </a>
                     </div>
                 </div>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title mdl-card__titleB mdl-card--expand">
+                        <div class="colortitle">
+                            <h2 class="mdl-card__title-text">Barcelona</h2>
+                        </div>  
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        Experièncias inolvidables, un buenn sitio la Sagrada Familia.
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                        Informa't
+                        </a>
+                    </div>
+                </div>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title mdl-card__titleC mdl-card--expand">
+                        <div class="colortitle">
+                            <h2 class="mdl-card__title-text">Londres</h2>
+                        </div>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        Aventura molt entretinguda on la passaras molt bé.
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                        Informa't
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <H4>DIFERENTS LLOCS ON POTS ANAR</H4> 
+            <div class="margin fuentepre">
+                Descubre las mejores experiencias en hoteles en los más de 1000 artículos de trivago Magazine, desde hoteles boutique en Barcelona hasta casas rurales con encanto en Andalucía.
+                En el buscador de hoteles de trivago es facilísimo comparar los precios de más de 1,8 millones de hoteles de más de 190 países en más de 400 webs de reserva. Cada año recibimos 1 400 millones de visitas de viajeros que usan este buscador de hoteles para comparar distintas ofertas en el mismo destino. Además, te aportamos información útil para viajar a ciudades como Madrid o Granada. Encontrar tu hotel ideal en trivago es pan comido. Si buscas ideas para tu próxima aventura, recuerda que Barcelona y sus alrededores son una excelente opción para viajes de una semana o más, y en nuestro buscador encontrarás una gran cantidad de hoteles disponibles.
+            </div>
+            <div class="slider">
+                <ul>
+                    <li><img src="/web/imatges/fondomenu2.jpg"></li>
+                    <li><img src="/web/imatges/fondomenu3.jpg"></li>
+                    <li><img src="/web/imatges/fondomenu4.jpg"></li>
+                    <li><img src="/web/imatges/fondomenu5.jpg"></li>
+                </ul>
+            </div>
         </div>
 
         <div id='frontendProductes'>
@@ -140,7 +136,11 @@
         </div>
 
         <div id='frontendContacte'>
-            Pàgina amb informacio de contacte
+            <p>On es troba nostra empresa?</p>
+            <div class="expContactes">Nostra empresa es troba en Castelldefels, una ciutat de Barcelona en Espanya. <br><br> Telefón movil: 678 673 242</div> 
+            <p>Ubicació en Google Maps</p>
+            <div class="expContactes">Es situa al costat de la plaça de la Lluna com podeu veure a baix.</div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11993.342230056187!2d1.9633313671611872!3d41.27980091062189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a482be97072263%3A0x7c102b7ee443690c!2sPla%C3%A7a%20de%20la%20Lluna%2C%2008860%20Castelldefels%2C%20Barcelona!5e0!3m2!1ses!2ses!4v1585734284897!5m2!1ses!2ses" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
 
         <div id='backofficeUsuaris'>

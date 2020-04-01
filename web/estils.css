@@ -19,11 +19,12 @@
     display: flex;
     flex-direction: row;
     padding: 40px;
-    width: 100%;
+    width: calc(100% - 86px);
     height: 50px;
     border: solid 3px black;
     position: sticky;
     top: 0;
+    z-index: 100;
 }
 
 #frontendMenuMobil {
@@ -31,6 +32,7 @@
     background-size: cover;
     position: sticky;
     top: 0;
+    z-index: 100;
 }
 
 
@@ -72,7 +74,7 @@ body > #frontendHome {
     align-items: center;
     background-image: url(imatges/arenamar.jpg);
     background-size: cover;
-    height: 400px;
+    height: 200px;
     border: solid 3px black;
     
 }
@@ -83,6 +85,8 @@ body > #frontendHome {
     height: 50px;
     position: sticky;
     top: 0px;
+    justify-content: space-between;
+    z-index: 100;
 }
 .botoMenu:hover {
     color: teal;
@@ -102,9 +106,8 @@ body > #frontendHome {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-style: oblique;
-    margin-left: 900px;
-    
+    font-style: oblique; 
+    margin-right: 25px;   
 }
 .menuicono {
     align-items: center;
@@ -123,35 +126,48 @@ body > #frontendHome {
  
  /* Presentació */
 
-.frontedPresentacio {
+#frontendPresentacio {
     display: flex;
     flex-direction: column;
-}
-.titulopre {
-    display: flex;
     align-items: center;
+    display: none;
+}
+
+#frontendPresentacio H4 {
+    background-color: gold;
+    display: flex;
+    justify-content: center;
     text-align: center;
-    flex-direction: column;
+    align-items: center;
+    flex-direction: row;
+    font-size: 2em;
+    height: 2em;
+    width: 100%;
+}
+.fuentepre {
+    font-size: 1,5em;
 }
 @media only screen and (max-device-width: 599px) {
-    .titulopre {
-        max-width: calc(100% - 64px);    
+    #frontendPresentacio H4 {
+        font-size: 1.5em;
+        height: 4.5em;
     }
 }
+
 .targetes {
     display: flex;
     flex-direction: row;
-    padding: 20px 40px 40px 40px;
+    padding: 20px 0;
+    flex-wrap: wrap;
+    max-width: calc(100% - 20px);
+    z-index: 0;
 
 }
-@media only screen and (max-device-width: 599px) {
-    .targetes {
-        flex-direction: column;
-    }
+
+.targetes div {
+    margin: 10px;
 }
-.texttar {
-    margin-right: 100px;
-}
+
 .demo-card-square > .mdl-card__titleA {
     background: url('https://mochilerosentailandia.com/wp-content/uploads/2018/07/japon-primavera.jpg') center / cover;
 }
@@ -161,16 +177,6 @@ body > #frontendHome {
 .demo-card-square > .mdl-card__titleC {
     background: url('https://elviajero.elpais.com/elviajero/imagenes/2019/05/09/actualidad/1557394830_938041_1557396424_noticia_grande.jpg') center / cover;
 }  
-.difellocs {
-    background-color: gold;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    flex-direction: row;
-    font-size: 2em;
-    height: 2em;
-}
 
 .cardtitle {
     background-color: black;
@@ -231,7 +237,32 @@ body > #frontendHome {
     100%{margin-left:-300%;}
 }
 
-/* Presentació MOBILE*/
+/* Contacte */
+
+#frontendContacte {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 2em 0 0 0;
+    display: none;
+}
+#frontendContacte p {
+    background-color: gold;
+    font-size: 2em;
+    height: 2em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.expContactes {
+    padding: 0 0 1em 0;
+    font-size: 1.5em;
+}
+
+/* Productes */
 
 
 
