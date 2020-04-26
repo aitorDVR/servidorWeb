@@ -353,3 +353,12 @@ body > #frontendHome {
     background-color: lightcyan;
     display: none;
 }
+.footer {
+    background-color: mediumaquamarine;
+    height: 4em;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
