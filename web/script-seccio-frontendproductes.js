@@ -28,7 +28,7 @@ class ObjSeccioFrontendProductes {
                 codiHTML = codiHTML + '</div>'
                 codiHTML = codiHTML + '<hr/>'
                 codiHTML = codiHTML + '<div class="productes1">'
-                codiHTML = codiHTML + '<div class="productes2">'
+                codiHTML = codiHTML + '<div class="productes2" onclick=\'navegacio.canviaSeccio("frontendProducte&' + valor.id + '")\'>'
                 codiHTML = codiHTML + '<h3>' + valor.nom +'</h3>'
                 codiHTML = codiHTML + '<div>' + valor.descripcio +'</div>'
                 codiHTML = codiHTML + '<div>' + valor.preu +' €</div>'

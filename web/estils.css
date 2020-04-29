@@ -59,6 +59,9 @@ body > #frontendHome {
 .margin {
     margin: 10px;
 }
+.fondoweb {
+    background-image: url(imatges/fondoweb.jpeg);
+}
 
 /* Menu estilos */
 
@@ -72,12 +75,12 @@ body > #frontendHome {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-image: url(https://besthqwallpapers.com/Uploads/29-12-2017/35507/thumb2-tropics-4k-summer-sea-palms.jpg);
+    background-image: url(imatges/palmeras.jpg);
     background-size: inherit;
     width: 100%;
     height: 200px;
     border: solid 3px black;
-    
+    width: calc(100% - 6px);
 }
 .divmenu {
     display: flex;
@@ -116,6 +119,9 @@ body > #frontendHome {
 .boton {
     background-color: darkgray;
     height: 51px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 .menumobile {
     font-size: 20px;
@@ -123,6 +129,9 @@ body > #frontendHome {
     margin-top: 5px;
     margin-left: 20px;
     font-style: oblique;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
  
  /* Presentació */
@@ -276,11 +285,15 @@ body > #frontendHome {
     padding: 0 0 1em 0;
     font-size: 1.5em;
 }
+.etiqueta {
+    font-size: 2em;
+}
 
 /* Productes */
 
 #frontendProductes {
     display: none;
+    background-color: cornflowerblue;
 }
 .productes1 {
     justify-content: center;
@@ -298,6 +311,7 @@ body > #frontendHome {
     width: 25em;
     height: 11em;
     border: 2px solid black;
+    cursor: pointer;
 }
 .productesexp {
     background-image: url(imatges/cielop.jpg);
@@ -330,7 +344,49 @@ body > #frontendHome {
     }
     
 }
+#frontendproducte {
+    align-items: center;
+    justify-content: center;
+    background-color: cornflowerblue;
+}
+.detall {
+    margin: 4em;
+    border: solid black;
+    background-color: cornsilk;
+}
 
+.detall h3 {
+    text-align: center;
+    font-size: 4em;
+    margin: 0.5em;
+}
+.detall div {
+    text-align: center;
+    font-size: 1.5em;
+    padding: 0 0 0.5em 0;
+}
+
+.detalltext {
+    background-color: cornsilk;
+}
+@media only screen and (min-device-width: 599px) {
+    .detallimg img{
+        width: 900px;
+        height: 400px;
+    } 
+}
+@media only screen and (max-device-width: 599px) {
+    .detall h3 {
+        text-align: center;
+        font-size: 2em;
+        margin: 0.5em;
+    }
+    .detall div {
+        text-align: center;
+        font-size: 1em;
+        padding: 0 0 0.5em 0;
+    }
+}
 
 /* Otros */
 
