@@ -268,7 +268,7 @@ body > #frontendHome {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    margin: 2em 0 0 0;
+    margin: 0 0 0 0;
     display: none;
 }
 #frontendContacte p {
@@ -280,6 +280,7 @@ body > #frontendHome {
     justify-content: center;
     text-align: center;
     align-items: center;
+    margin: 24px 0 16px 0;
 }
 .expContactes {
     padding: 0 0 1em 0;
@@ -380,6 +381,9 @@ body > #frontendHome {
         text-align: center;
         font-size: 2em;
         margin: 0.5em;
+    }
+    .detall {
+        margin: 4em 0;
     }
     .detall div {
         text-align: center;
