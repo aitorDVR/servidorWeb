@@ -134,6 +134,112 @@ body > #frontendHome {
     z-index: 100;
 }
  
+/* INICI */
+
+#frontendHome {
+    display: flex;
+    flex-direction: column;
+}
+#frontendhome p {
+    background-color: gold;
+    font-size: 2em;
+    height: 2em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 24px 0 16px 0;
+}
+.inici1 {
+    background-color: lightskyblue;
+    font-size: 3em;
+    height: 2em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 24px 0 16px 0;
+    border: solid black;
+    max-width: calc(100% - 7px);
+    
+}
+.iniciweb {
+    font-size: 2em;
+    margin: 0.5em 0 0 0;
+    text-align: -webkit-center;
+    font-style: oblique;
+    height: 2em;
+}
+.sliders {
+    margin: auto;
+    width: 800px;
+    padding: 30px;
+    background-color: whitesmoke;
+}
+.sliders ul, li {
+    margin: 1em 0 0 0;
+    padding: 0;
+    list-style: none;
+}
+ul.slider {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+ul.slider li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+
+    transition: opacity .5s;
+}
+ul.slider li img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+ul.slider li:first-child {
+    opacity: 1;
+}
+ul.slider li:target {
+    opacity: 1;
+}
+.menuslider {
+    text-align: center;
+    margin: 20px;
+}
+.menuslider li {
+    display: inline-block;
+    text-align: center;
+}
+.menuslider li a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: gray;
+    padding: 10px;
+    width: 50px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+}
+@media only screen and (max-device-width: 599px) {
+    ul.slider li img {
+        width: 300px;
+    }
+    .sliders {
+        width: 300px;
+    }
+    .iniciweb {
+        font-size: 1.5em;
+        height: 4em;
+    }
+}
  /* Presentació */
 
 #frontendPresentacio {
@@ -221,44 +327,6 @@ body > #frontendHome {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-.slider {
-    width: 100%;
-    margin: auto;
-    overflow: hidden;
-    margin-top: 30px;
-}
-.slider ul {
-    display: flex;
-    padding: 0;
-    width: 400%;
-    animation: cambio 20s infinite alternate;
-}
-.slider il:hover {
-    animation-play-state: paused;
-    cursor: pointer;
-}
-.slider li {
-    width: 100%;
-    list-style: none;
-}
-.slider img {
-    width: 100%;
-    height: 500px;
-}
-
-@keyframes cambio {
-    0%{margin-left: 0%;}
-    20%{margin-left: 0%;}
-
-    25%{margin-left:-100%;}
-    45%{margin-left:-100%;}
-
-    50%{margin-left:-200%;}
-    70%{margin-left:-200%;}
-
-    75%{margin-left:-300%;}
-    100%{margin-left:-300%;}
 }
 
 /* Contacte */
