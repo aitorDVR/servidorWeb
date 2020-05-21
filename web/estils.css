@@ -170,7 +170,8 @@ body > #frontendHome {
     margin: 0.5em 0 0 0;
     text-align: -webkit-center;
     font-style: oblique;
-    height: 2em;
+    height: 3em;
+    line-height: 1.2em;
 }
 .sliders {
     margin: auto;
@@ -262,6 +263,9 @@ ul.slider li:target {
 }
 .fuentepre {
     text-align: center;
+    text-align: -webkit-center;
+    font-style: oblique;
+    line-height: 1.2em;
 }
 .imgpre {
     display: flex;
@@ -353,6 +357,8 @@ ul.slider li:target {
 .expContactes {
     padding: 0 0 1em 0;
     font-size: 1.5em;
+    text-align: -webkit-center;
+    font-style: oblique;
 }
 .etiqueta {
     font-size: 2em;
